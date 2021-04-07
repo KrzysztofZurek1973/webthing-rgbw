@@ -1,0 +1,48 @@
+menu "RGBW channels config"
+		
+config CH_RED_GPIO
+	int "GPIO number for RED channel"
+	range 0 34
+	default 18
+	help
+		It will be visible for compiler as CONFIG_CHANNEL_RED_GPIO
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+
+config CH_GREEN_GPIO
+	int "GPIO number for GREEN channel"
+	range 0 34
+	default 19
+	help
+		It will be visible for compiler as CONFIG_CHANNEL_GREEN_GPIO
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+
+config CH_BLUE_GPIO
+	int "GPIO number for BLUE channel"
+	range 0 34
+	default 21
+	help
+		It will be visible for compiler as CONFIG_CHANNEL_GREEN_GPIO
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+		
+config CH_WHITE_GPIO
+	int "GPIO number for WHITE channel"
+	range 0 34
+	default 22
+	help
+		It will be visible for compiler as CONFIG_CHANNEL_WHITE_GPIO
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+
+
+endmenu
